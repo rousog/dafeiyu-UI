@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Light-palette scene backdrop (placeholder, replace freely).
+
+  Pale daylight over shallow water: bright at the top, a soft blue floor at the
+  bottom, and a few low-contrast light shafts. Kept deliberately quiet so dark
+  text stays legible over it; the figure image is shared with the dark palette.
+
+  Replace this file to swap the scene alone; the character and the scrim are
+  independent.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="day" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0" stop-color="#F8FBFF"/>
+      <stop offset="0.45" stop-color="#E9F1FB"/>
+      <stop offset="1" stop-color="#DCE9F8"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.74" cy="0.06" r="0.66">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="shallow" cx="0.5" cy="1" r="0.8">
+      <stop offset="0" stop-color="#C7DDF4" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#C7DDF4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#day)"/>
+  <rect width="1600" height="1000" fill="url(#sun)"/>
+  <rect width="1600" height="1000" fill="url(#shallow)"/>
+
+  <!-- Soft daylight shafts, intentionally faint. -->
+  <g fill="#FFFFFF" opacity="0.34">
+    <polygon points="1150,0 1262,0 1075,1000 930,1000"/>
+    <polygon points="1310,0 1352,0 1222,1000 1152,1000"/>
+  </g>
+  <g fill="#AFC9E8" opacity="0.16">
+    <polygon points="1000,0 1042,0 892,1000 822,1000"/>
+  </g>
+
+  <!-- Distant surface line. -->
+  <ellipse cx="1240" cy="30" rx="230" ry="22" fill="#FFFFFF" opacity="0.55"/>
+  <ellipse cx="880" cy="16" rx="150" ry="14" fill="#FFFFFF" opacity="0.4"/>
+</svg>

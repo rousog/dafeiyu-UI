@@ -1,0 +1,11 @@
+# Dependencies installed by DSH into the profile, never here
+node_modules/
+
+# Local packaging artifacts
+*.zip
+*.tgz
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
